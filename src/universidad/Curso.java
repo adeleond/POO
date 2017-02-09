@@ -5,6 +5,8 @@
  */
 package universidad;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Administrador
@@ -12,7 +14,8 @@ package universidad;
 public class Curso {
     private int nrc;
     private Profesor profesor;
-
+    private Estudiante estudiante;
+     ArrayList<Estudiante> estudiantes;
     public Curso(int nrc) {
         this.nrc = nrc;
     }
@@ -24,12 +27,22 @@ public class Curso {
     public Profesor getProfesor() {
         return profesor;
     }
-
+    
     public void setProfesor(Profesor profesor) {
         if (this.profesor == null){
             this.profesor = profesor;
         }
     }
+
+    public Estudiante getEstudiante(){
+        return estudiante;
+    }
+    public void setEstudiante(Estudiante estudiante){
+        this.estudiante = estudiante;
+    }
+
+        
+
     
     
     

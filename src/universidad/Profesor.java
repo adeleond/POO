@@ -17,6 +17,8 @@ public class Profesor {
     String nombre;
     ArrayList<Curso> cursos;
 
+
+
     public Profesor(int id){
         this.id = id;
         cursos = new ArrayList();  
@@ -28,6 +30,11 @@ public class Profesor {
             return true;
         }
         return false;
+    }
+    
+    public int NumeroCursos(int id){
+    int n = 0;
+        return n;
     }
     
    

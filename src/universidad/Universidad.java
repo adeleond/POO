@@ -11,11 +11,12 @@ import java.util.ArrayList;
  *
  * @author Administrador
  */
+
 public class Universidad {
 
     ArrayList<Curso> cursos;
     ArrayList<Profesor> profesores;
-    
+    ArrayList<Estudiante> estudiantes;
     
     public Universidad(){
       cursos = new ArrayList<>();  
@@ -35,6 +36,16 @@ public class Universidad {
     public void registrarProfesorCurso(Profesor p, Curso c){
        p.cursos.add(c);
        c.setProfesor(p);
+    }
+    
+    public void agregarEstudiantes(){
+        Estudiante e = new Estudiante(30);
+        estudiantes.add(e);
+    }
+    
+    public void preguntarEstudiantesaCurso(Curso c, Estudiante e){
+        e.cursos.add(c);
+        
     }
     
     
